@@ -1,0 +1,29 @@
+{
+  "name": "pptr",
+  "version": "1.0.0",
+  "description": "Automated software testing with Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test:sample": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/sample.test.js",
+    "test:device": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/device.test.js",
+    "test:e2e": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e/*.test.js"
+  },
+  "keywords": [
+    "Puppeteer",
+    "Mocha",
+    "Chai",
+    "Automation"
+  ],
+  "author": "Viet.Hoang",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "crypto-js": "^4.0.0",
+    "image-downloader": "^4.0.2",
+    "jsonfile": "^6.1.0",
+    "make-dir": "^3.1.0",
+    "mocha": "^8.3.2",
+    "prettier": "^2.2.1",
+    "puppeteer": "^8.0.0"
+  }
+}
